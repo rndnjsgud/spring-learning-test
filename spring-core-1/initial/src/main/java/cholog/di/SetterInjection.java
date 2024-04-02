@@ -5,6 +5,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SetterInjection {
+    @Autowired
+    public void setInjectionBean(InjectionBean injectionBean) {
+        this.injectionBean = injectionBean;
+    }
+
     private InjectionBean injectionBean;
 
     /*
